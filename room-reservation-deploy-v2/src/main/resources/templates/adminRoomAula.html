@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa; /* Sesuaikan warna latar belakang agar lebih lembut */
+    }
+
+    header {
+      background-color: #343a40; /* Warna gelap pada header yang senada dengan halaman lab */
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .card h3 {
+      margin-bottom: 0.5rem;
+      color: #555;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 2rem;
+    }
+
+    th, td {
+      padding: 12px 20px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+
+    td {
+      text-align: center;
+    }
+
+    .status {
+      font-weight: bold;
+      color: #007BFF;
+    }
+
+    .available {
+      color: green;
+    }
+
+    .booked {
+      color: red;
+    }
+
+    .button {
+      padding: 8px 15px;
+      background-color: #28a745; /* Tombol hijau yang serasi dengan status available */
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 10px;
+    }
+
+    .button:hover {
+      background-color: #218838; /* Tombol hijau gelap saat hover */
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Admin Dashboard</h1>
+</header>
+
+<div class="container">
+  <!-- Daftar Ruangan Aula -->
+  <div class="card">
+    <h3>Ruang Aula</h3>
+    <table>
+      <thead>
+      <tr>
+        <th>Ruangan</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+      </thead>
+      <tbody>
+      <!-- Ruang Aula -->
+      <tr>
+        <td>Aula</td>
+        <td><span class="status available">Available</span></td> <!-- Status yang bisa disesuaikan -->
+        <td><a href="/admin/rooms/aula" class="button">Lihat Ruang Aula</a></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+</body>
+</html>
